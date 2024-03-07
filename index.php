@@ -15,9 +15,9 @@
             $stmt->bindParam(':name', $user->name);
             $stmt->bindParam(':email', $user->email);
             if($stmt->execute()) {
-                $data = ['status' => 1, 'message' => "Record successfully created"];
+                $data = ['status' => 1, 'message' => "successfully created"];
             } else {
-                $data = ['status' => 0, 'message' => "Failed to create record."];
+                $data = ['status' => 0, 'message' => "Failed to create ."];
             }
             echo json_encode($data);
             break;
